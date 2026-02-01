@@ -5,7 +5,7 @@ document.getElementById("bookingForm").addEventListener("submit", function(e){
   const tanggal = document.getElementById("tanggal").value;
   const pesan = document.getElementById("pesan").value;
 
-  const waNumber = "628xxxxxxxxxx";
+  const waNumber = "6281775091158";
   const text = `Halo, saya ${nama}. Saya ingin booking tour Lombok pada tanggal ${tanggal}. ${pesan}`;
 
   window.open(`https://wa.me/${waNumber}?text=${encodeURIComponent(text)}`, "_blank");
