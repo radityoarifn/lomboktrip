@@ -34,3 +34,9 @@ const observer = new IntersectionObserver(entries => {
 });
 
 lazyImages.forEach(img => observer.observe(img));
+
+ document.querySelectorAll('.wa-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      console.log('WA Package Clicked:', btn.innerText);
+    });
+  });
