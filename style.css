@@ -44,10 +44,18 @@ header {
   display: inline-block;
   margin-top: 20px;
   padding: 14px 30px;
-  background: #22c55e;
-  border-radius: 50px;
-  color: white;
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+  border-radius: 10px; /* ⬅️ kotak rounded */
+  color: #ffffff;
   font-weight: 600;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.cta:hover {
+  transform: translateY(-2px);
+  background: linear-gradient(135deg, #16a34a, #15803d);
+  box-shadow: 0 8px 22px rgba(34, 197, 94, 0.4);
 }
 
 section {
@@ -108,14 +116,23 @@ footer {
   padding: 30px;
 }
 
-.wa-float {
+.wa-float { 
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background: #22c55e;
-  padding: 15px 20px;
-  border-radius: 50px;
-  color: white;
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+  padding: 14px 18px;
+  border-radius: 10px; /* ⬅️ kotak rounded */
+  color: #ffffff;
+  font-weight: 600;
+  box-shadow: 0 10px 28px rgba(34, 197, 94, 0.45);
+  transition: all 0.25s ease;
+  z-index: 999;
+}
+
+.wa-float:hover {
+  transform: translateY(-2px);
+  background: linear-gradient(135deg, #16a34a, #15803d);
 }
 
 .gallery img {
@@ -269,26 +286,31 @@ footer {
 
 .wa-btn {
   display: block;
-  margin-top: 12px;
-  padding: 12px;
+  margin-top: 14px;
+  padding: 14px 16px;
   text-align: center;
-  background: #25D366;
-  color: #fff;
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+  color: #ffffff;
   font-weight: 700;
-  border-radius: 10px;
+  font-size: 15px;
+  border-radius: 10px; /* kotak rounded */
   text-decoration: none;
-  transition: 0.3s ease;
+  transition: all 0.25s ease;
 }
 
 .wa-btn:hover {
-  background: #1ebe5d;
-  transform: scale(1.02);
+  background: linear-gradient(135deg, #16a34a, #15803d);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 22px rgba(34, 197, 94, 0.45);
 }
 
 .wa-primary {
-  background: linear-gradient(135deg, #25D366, #128C7E);
+  background: linear-gradient(135deg, #22c55e, #0ea5a5);
 }
 
+.wa-primary:hover {
+  background: linear-gradient(135deg, #16a34a, #0891b2);
+}
 
 
 .pricing-section {
