@@ -373,61 +373,96 @@ footer {
 
 
 .pricing-section {
-  padding: 55px 18px;
-  background: #f9fbfc; /* sama seperti section paket */
-  color: #111827;
+  padding: 70px 20px;
+  background: #f9fbfc;
 }
 
-/* Judul seragam */
 .section-title {
   text-align: center;
   font-size: 26px;
-  margin-bottom: 32px;
-  color: #0f172a;
   font-weight: 800;
-}
-
-/* Card harga mirip card paket */
-.pricing-card {
-  background: #ffffff;
-  border-radius: 18px;
-  margin-bottom: 20px;
-  padding: 20px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
-  border: 1px solid rgba(0, 0, 0, 0.06);
-  transition: 0.25s ease;
-}
-
-.pricing-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.12);
-}
-
-/* Paket highlight */
-.pricing-card.highlight {
-  border: 2px solid #22c55e;
-}
-
-/* Table clean */
-.pricing-table th {
-  text-align: left;
-  color: #64748b;
-  padding: 10px 0;
-  font-weight: 500;
-  width: 42%;
-}
-
-.pricing-table td {
-  padding: 10px 0;
-  font-weight: 700;
+  margin-bottom: 45px;
   color: #0f172a;
 }
 
-/* Harga standout */
+/* Grid 5 card berjajar */
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+
+/* Card style sama seperti paket favorit */
+.pricing-box {
+  background: white;
+  border-radius: 18px;
+  padding: 22px;
+  box-shadow: 0 12px 25px rgba(0,0,0,0.08);
+  transition: 0.25s;
+}
+
+.pricing-box:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 30px rgba(0,0,0,0.12);
+}
+
+.pricing-box h3 {
+  font-size: 17px;
+  font-weight: 800;
+  margin-bottom: 16px;
+  color: #0f172a;
+}
+
+/* Isi tabel tanpa garis */
+.pricing-info div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.pricing-info span {
+  color: #64748b;
+  font-weight: 500;
+}
+
+.pricing-info b {
+  color: #0f172a;
+  font-weight: 700;
+}
+
+/* Harga hijau */
 .price {
   color: #22c55e;
-  font-size: 22px;
   font-weight: 900;
+}
+
+/* Booking link */
+.booking-link {
+  display: block;
+  text-align: right;
+  margin-top: 18px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #22c55e;
+  text-decoration: none;
+}
+
+.booking-link:hover {
+  text-decoration: underline;
+}
+
+/* Responsive: otomatis turun */
+@media (max-width: 1200px) {
+  .pricing-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .pricing-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* Catatan bawah */
