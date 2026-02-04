@@ -381,7 +381,7 @@ footer {
   text-align: center;
   font-size: 26px;
   margin-bottom: 45px;
-  color: #475569;
+  color: #0f172a;
 }
 
 /* Grid 5 card berjajar */
@@ -407,7 +407,6 @@ footer {
 
 .pricing-box h3 {
   font-size: 17px;
-  font-weight: 800;
   margin-bottom: 16px;
   color: #0f172a;
 }
@@ -421,13 +420,13 @@ footer {
 }
 
 .pricing-info span {
-  color: #64748b;
-  font-weight: 500;
+  color: #0f172a;
+  
 }
 
 .pricing-info b {
-  color: #0f172a;
-  font-weight: 700;
+  color: #475569;
+  
 }
 
 /* Harga hijau */
