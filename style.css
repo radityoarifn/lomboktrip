@@ -158,11 +158,48 @@ button {
   border: none;
 }
 
+.map {
+  margin-top: 40px;
+  border-radius: 18px;
+  overflow: hidden;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 12px 25px rgba(0,0,0,0.35);
+}
+
 .map iframe {
   width: 100%;
-  height: 300px;
-  border: 0;
-  margin-top: 30px;
+  height: 320px;
+  border: none;
+}
+
+#kontak {
+  padding: 70px 20px;
+  text-align: center;
+
+  /* Background Image */
+  background: url("images/Welcome-kedai-sawah-sembalun.jpeg") center/cover no-repeat;
+
+  /* Overlay agar teks tetap jelas */
+  position: relative;
+  color: white;
+}
+
+#kontak::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  /* Overlay gelap transparan */
+  background: rgba(0, 0, 0, 0.55);
+  z-index: 0;
+}
+
+/* Supaya semua isi tampil di atas overlay */
+#kontak * {
+  position: relative;
+  z-index: 1;
 }
 
 footer {
@@ -419,13 +456,14 @@ footer {
 }
 
 .pricing-info span {
-  color: #475569;
+  color: #0f172a;
   
 }
 
 .pricing-info b {
   
-  color: #0f172a;
+  
+  color: #475569;
   
 }
 
